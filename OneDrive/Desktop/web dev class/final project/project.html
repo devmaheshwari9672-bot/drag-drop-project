@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Match Puzzle - Drag & Drop Game</title>
+    <link rel="stylesheet" href="./styles.css">
+   
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">🎮 Color Match Puzzle</h1>
+        <p class="game-subtitle">Drag gems to matching color zones! Score as many points as you can!</p>
+        
+        <div class="stats">
+            <div class="stat">
+                <span id="score">0</span>
+                Score
+            </div>
+            <div class="stat">
+                <span id="level">1</span>
+                Level
+            </div>
+            <div class="stat">
+                <span id="moves">10</span>
+                Moves Left
+            </div>
+        </div>
+
+        <div class="game-board">
+            <div class="drop-zones" id="dropZones">
+                <!-- Drop zones will be generated here -->
+            </div>
+            
+            <div class="gems-container" id="gemsContainer">
+                <!-- Gems will be generated here -->
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="newGame()">New Game</button>
+            <button class="btn btn-secondary" onclick="nextLevel()">Next Level</button>
+        </div>
+    </div>
+    <script src="./script.js"/>
+
+  
+</body>
+</html>
